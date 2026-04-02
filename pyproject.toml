@@ -1,0 +1,26 @@
+[project]
+name = "git-remote-gcs"
+version = "0.1.1"
+description = "A git remote helper for Google Cloud Storage"
+authors = [{ name = "Tyler", email = "tyler@zerosumdefense.co" }]
+classifiers = [
+    "Topic :: Software Development :: Version Control",
+    "Topic :: Software Development :: Version Control :: Git"
+]
+license = "Apache-2.0"
+readme = "README.md"
+requires-python = ">= 3.10"
+dependencies = [
+    "google-cloud-storage>=2.14.0,<3.0.0",
+]
+
+[project.scripts]
+git-remote-gcs = "git_remote_gcs.remote:main"
+git-gcs = "git_remote_gcs.manage:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["git_remote_gcs*"]
