@@ -1,8 +1,15 @@
 # git-remote-gcs
 
+[![PyPI version](https://img.shields.io/pypi/v/git-remote-gcs)](https://pypi.org/project/git-remote-gcs/)
+[![License](https://img.shields.io/github/license/Vicguin65/git-remote-gcs)](https://github.com/Vicguin65/git-remote-gcs/blob/main/LICENSE)
+[![Python 3.10+](https://img.shields.io/pypi/pyversions/git-remote-gcs)](https://pypi.org/project/git-remote-gcs/)
+
 Use Google Cloud Storage as a Git remote. This is a GCP equivalent of [awslabs/git-remote-s3](https://github.com/awslabs/git-remote-s3).
 
 It provides a [git remote helper](https://git-scm.com/docs/gitremote-helpers) that lets you use a GCS bucket as a serverless Git server — no VMs, no Secure Source Manager, just a bucket.
+
+📦 **PyPI:** https://pypi.org/project/git-remote-gcs/
+💻 **GitHub:** https://github.com/Vicguin65/git-remote-gcs
 
 ## Installation
 
@@ -68,7 +75,7 @@ git-remote-gcs
 ### Install from source
 
 ```bash
-git clone <this-repo>
+git clone https://github.com/Vicguin65/git-remote-gcs.git
 cd git-remote-gcs
 pip install .
 ```
@@ -317,6 +324,10 @@ git -c transfer.verbosity=2 push origin main
 | UI / PRs        | No                | Yes                   | Yes                  | Yes          |
 | Serverless      | Yes               | Yes                   | N/A                  | No           |
 
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request on [GitHub](https://github.com/Vicguin65/git-remote-gcs).
+
 ## Inspired By
 
 - [awslabs/git-remote-s3](https://github.com/awslabs/git-remote-s3) — the S3 equivalent this project is modeled after
@@ -324,4 +335,4 @@ git -c transfer.verbosity=2 push origin main
 
 ## License
 
-Apache-2.0
+[Apache-2.0](LICENSE)

@@ -1,11 +1,14 @@
 [project]
 name = "git-remote-gcs"
 version = "0.1.1"
-description = "A git remote helper for Google Cloud Storage"
+description = "Use Google Cloud Storage as a serverless Git remote. The GCP equivalent of git-remote-s3."
 authors = [{ name = "Tyler", email = "tyler@zerosumdefense.co" }]
 classifiers = [
     "Topic :: Software Development :: Version Control",
-    "Topic :: Software Development :: Version Control :: Git"
+    "Topic :: Software Development :: Version Control :: Git",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
 ]
 license = "Apache-2.0"
 readme = "README.md"
@@ -13,6 +16,12 @@ requires-python = ">= 3.10"
 dependencies = [
     "google-cloud-storage>=2.14.0,<3.0.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/Vicguin65/git-remote-gcs"
+Repository = "https://github.com/Vicguin65/git-remote-gcs"
+Issues = "https://github.com/Vicguin65/git-remote-gcs/issues"
+PyPI = "https://pypi.org/project/git-remote-gcs/"
 
 [project.scripts]
 git-remote-gcs = "git_remote_gcs.remote:main"
