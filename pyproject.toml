@@ -1,13 +1,12 @@
 [project]
 name = "git-remote-gcs"
-version = "0.1.1"
+version = "0.1.2"
 description = "Use Google Cloud Storage as a serverless Git remote. The GCP equivalent of git-remote-s3."
 authors = [{ name = "Tyler", email = "tyler@zerosumdefense.co" }]
 classifiers = [
     "Topic :: Software Development :: Version Control",
     "Topic :: Software Development :: Version Control :: Git",
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
 ]
 license = "Apache-2.0"
